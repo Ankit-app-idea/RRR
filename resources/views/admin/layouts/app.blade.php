@@ -122,7 +122,8 @@
                   <div class="member-info display-flex flex-column"><span class="black-text">Two new item submitted</span><small class="grey-text">Marketing Manager</small></div>
                 </div>
                 <div class="status"><small class="grey-text">17kb</small></div>
-              </div></a></li>
+              </div></a>
+          </li>
           <li class="auto-suggestion"><a class="collection-item" href="#">
               <div class="display-flex">
                 <div class="display-flex align-item-center flex-grow-1">
@@ -226,8 +227,8 @@
                     <span class="menu-title" data-i18n="User Profile">Dashboard</span>
                 </a>
             </li>
-            <li class="{{ request()->is('admin/manage-profile') ? 'active' : ''}}">
-                <a class="waves-effect waves-cyan {{ request()->is('admin/manage-profile') ? 'active' : ''}} " href="{{url('admin/manage-profile')}}">
+            <li class="{{ request()->is('admin/manage-users') ? 'active' : ''}}">
+                <a class="waves-effect waves-cyan {{ request()->is('admin/manage-users') ? 'active' : ''}} " href="{{url('admin/manage-users')}}">
                     <i class="material-icons">person_outline</i>
                     <span class="menu-title" data-i18n="Manage profile">Manage profile</span>
                 </a>
